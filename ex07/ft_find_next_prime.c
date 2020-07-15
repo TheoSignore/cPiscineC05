@@ -6,7 +6,7 @@
 /*   By: tsignore <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 18:48:06 by tsignore          #+#    #+#             */
-/*   Updated: 2020/07/14 19:04:27 by tsignore         ###   ########.fr       */
+/*   Updated: 2020/07/15 11:06:58 by tsignore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@ int	ft_is_prime(int nb)
 {
 	int i;
 
+	if (nb <= 1)
+		return (0);
 	i = 2;
-	while (i < nb)
+	while (i <= nb / i)
 	{
 		if (nb % i == 0)
 			return (0);
