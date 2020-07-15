@@ -6,7 +6,7 @@
 /*   By: tsignore <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 15:10:48 by tsignore          #+#    #+#             */
-/*   Updated: 2020/07/15 09:37:09 by tsignore         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:56:56 by tsignore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@ int	ft_sqrt(int nb)
 
 	if (nb == 1)
 		return (nb);
-	if (nb > 2147483641)
-		return (0);
 	i = 0;
 	while (i++ < nb)
 	{
-		if (i > 593968971)
+		if (i >= 46341)
 			return (0);
 		if ((i * i) == nb)
 			return (i);
